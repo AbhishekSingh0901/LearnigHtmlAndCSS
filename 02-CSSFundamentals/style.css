@@ -1,0 +1,135 @@
+* {
+}
+
+body {
+  background-color: #f9e7eb;
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #f52556;
+}
+
+h1,
+h2,
+h3 {
+  color: #f52556;
+}
+h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+
+/* footer p {
+  font-size: 16px; descendent selector
+} 
+
+ article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f1f1f1;
+  border-right: 5px solid #f72a0b;
+  border-left: 5px solid #f72a0b;
+}
+
+aside {
+  background-color: #f1f1f1;
+  border-top: 5px double #f52556;
+  border-bottom: 5px double #f52556;
+  border-radius: 20px;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:nth-child(even) {
+  font-weight: bold;
+  color: red;
+}
+
+/* Styling Links */
+a:link {
+  color: rgb(158, 19, 6);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(252, 52, 7);
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* resolving conflicts */
+
+/* #copyright {
+  color: #f52556;
+}
+
+.copyright {
+  color: yellow;
+}
+.text {
+  color: blue;
+}
+
+footer p {
+  color: green !important;
+} */
+
+nav {
+  font-size: 18px;
+}
