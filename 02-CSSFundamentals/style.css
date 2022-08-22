@@ -9,6 +9,7 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #f52556;
+  position: relative;
 }
 
 .container {
@@ -30,7 +31,7 @@ body {
   padding: 20px 40px;
   /* most commonly used to make vertical spaces */
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 nav {
@@ -43,6 +44,7 @@ article {
 
 .post-header {
   margin-bottom: 40px;
+  /* position: relative; */
 }
 
 .post-img {
@@ -94,6 +96,7 @@ h4 {
   text-transform: uppercase;
   text-align: center;
 }
+
 p {
   font-size: 22px;
   line-height: 1.5;
@@ -173,6 +176,84 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+
+nav a:link {
+  /* background-color: #444;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "lato", sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease;
+  background: rgb(223, 5, 172);
+  background: linear-gradient(
+    0deg,
+    rgb(235, 8, 243) 0%,
+    rgb(240, 126, 255) 100%
+  );
+  border: none;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+button:hover {
+  background: rgb(0, 3, 255);
+  background: linear-gradient(
+    0deg,
+    rgb(139, 15, 248) 0%,
+    rgb(167, 103, 223) 100%
+  );
+}
+
+/* puseodo elements */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+h2 {
+  /* background-color: olive; */
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+
+  /* absolute positoning */
+  position: absolute;
+  top: -15px;
+  right: -25px;
+}
+/* p::first-line {
+  color: red;
+} */
+
+/* h3 + p::first-line {
+  color: red;
+} */
 
 /* resolving conflicts */
 
