@@ -8,7 +8,7 @@
 
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header clearfix">
         <h1>📘 The Code Magzine</h1>      
         <nav>
           <a href="blog.html">Blog</a>
@@ -16,6 +16,8 @@
           <a href="#">Flexbox</a>
           <a href="#">CSS Grid</a>
         </nav>
+
+        <!-- <div class = "clear"></div> -->
       </header>
 
       <article>
@@ -26,9 +28,10 @@
             src="img/laura-jones.jpg"
             alt="image of author missing!"
             width="64"
-            height="64"/>
+            height="64"
+            class = "author-img"/>
           
-          <p id = "author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+          <p id = "author" class="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
           
           <img class="post-img"
             src = "img/post-img.jpg" 
