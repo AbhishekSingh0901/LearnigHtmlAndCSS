@@ -144,7 +144,7 @@ li:last-child {
 
 .related {
   list-style: none;
-  margin-left: 0;
+  margin-left: 30px;
 }
 
 /* .first-li {
@@ -184,7 +184,7 @@ nav a:link {
   display: block; */
   display: inline-block;
   margin-right: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 nav a:link:last-child {
@@ -274,7 +274,7 @@ footer p {
 
 /* Layouts: FLOAT layout */
 
-.author-img {
+/* .author-img {
   float: left;
   margin-bottom: 20px;
 }
@@ -311,4 +311,59 @@ aside {
 }
 footer {
   clear: both;
+} */
+
+/* Flexbox */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container-content {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+aside {
+  flex: 1;
+}
+
+article {
+  flex: 0 0 825px;
+  margin-bottom: 0px;
 }
