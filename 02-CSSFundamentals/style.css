@@ -1,0 +1,369 @@
+* {
+  /* foing a global reset like this is extremely common */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9e7eb;
+  color: #444;
+  font-family: sans-serif;
+  border-top: 10px solid #f52556;
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  background-color: #f8cfd8;
+}
+
+.main-header {
+  background-color: #f1f1f1;
+  margin-top: 10px;
+  /*padding: 20px;
+   padding-left: 40px;
+  padding-right: 40px; 
+  Shorthand
+  */
+  padding: 20px 40px;
+  /* most commonly used to make vertical spaces */
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+aside {
+  background-color: #f1f1f1;
+  border-top: 5px double #f52556;
+  border-bottom: 5px double #f52556;
+  border-radius: 20px;
+  padding: 40px 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #f52556;
+}
+h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  /* you also add p margin-bottom to 15 
+  and after this you might think that margins add 
+  but they wont the sapce b/w h3 and p will be 40px
+  only
+  
+  this phenomenon is called COLLAPSING MARGINS.
+  */
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+/* footer p {
+  font-size: 16px; descendent selector
+} 
+
+ article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
+  margin-left: 30px;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:nth-child(even) {
+  font-weight: bold;
+  color: red;
+}
+
+/* Styling Links */
+a:link {
+  color: rgb(158, 19, 6);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(252, 52, 7);
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+nav a:link {
+  /* background-color: #444;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  display: inline-block;
+  margin-right: 30px;
+  /* margin-top: 10px; */
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "lato", sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease;
+  background: rgb(223, 5, 172);
+  background: linear-gradient(
+    0deg,
+    rgb(235, 8, 243) 0%,
+    rgb(240, 126, 255) 100%
+  );
+  border: none;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+button:hover {
+  background: rgb(0, 3, 255);
+  background: linear-gradient(
+    0deg,
+    rgb(139, 15, 248) 0%,
+    rgb(167, 103, 223) 100%
+  );
+}
+
+/* puseodo elements */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+h2 {
+  /* background-color: olive; */
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+
+  /* absolute positoning */
+  position: absolute;
+  top: -15px;
+  right: -25px;
+}
+/* p::first-line {
+  color: red;
+} */
+
+/* h3 + p::first-line {
+  color: red;
+} */
+
+/* resolving conflicts */
+
+/* #copyright {
+  color: #f52556;
+}
+
+.copyright {
+  color: yellow;
+}
+.text {
+  color: blue;
+}
+
+footer p {
+  color: green !important;
+} */
+
+/* Layouts: FLOAT layout */
+
+/* .author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+  padding: 30px 40px;
+  margin-right: 10px;
+}
+footer {
+  clear: both;
+} */
+
+/* Flexbox */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container-content {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+aside {
+  flex: 1;
+}
+
+article {
+  flex: 0 0 825px;
+  margin-bottom: 0px;
+}
