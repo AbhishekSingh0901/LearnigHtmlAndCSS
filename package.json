@@ -1,0 +1,23 @@
+{
+  "name": "learnightmlandcss",
+  "version": "1.0.0",
+  "description": "my journwy in learning html and css",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhishekSingh0901/LearnigHtmlAndCSS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhishekSingh0901/LearnigHtmlAndCSS/issues"
+  },
+  "homepage": "https://github.com/AbhishekSingh0901/LearnigHtmlAndCSS#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
