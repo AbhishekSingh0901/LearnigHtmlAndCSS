@@ -1,2 +1,2 @@
 # LearnigHtmlAndCSS
-my journwy in learning html and css 
+my journey in learning html and css 
